@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.container {
+	border-radius: 20px;
+    background-color: #FF00FF;
+    padding: 40px 60px;
+    margin: 10px;
+}
+
+</style>
+</head>
+<body>
+<div id="kntl"></div>
+
+<script>
+  // redux | hook  | logic
+  let component = "";
+  for (let i = 0; i < 20; i++) {
+    component += `<div class="container"><h1>NGEN</h1>` + "</div>";
+  }
+  
+  // render | return
+  document.getElementById("kntl").innerHTML = component;
+</script>
+</body>
+</html>
